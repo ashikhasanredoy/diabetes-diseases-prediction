@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: diabetes_project
+Version: 0.1
+Author: Ashik Hasan Redoy
+Author-email: ashikhasanhredoy@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: catboost
+Requires-Dist: xgboost
+Requires-Dist: scikit-learn
+Requires-Dist: dill
+Requires-Dist: flask
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist

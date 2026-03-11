@@ -1,0 +1,3 @@
+[2026-03-11 23:45:11,228] 19 root - INFO - Logger test started
+[2026-03-11 23:45:11,228] 30 root - ERROR - Error occur in python script name [/Users/macbookpro/Documents/Diabetes diseases prediction/src/logger.py] in line number [24] error message [division by zero]
+[2026-03-11 23:45:11,228] 33 root - INFO - Logger test finished
