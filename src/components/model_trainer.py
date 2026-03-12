@@ -62,7 +62,7 @@ class ModelTraining:
                 'AdaBoostClassifier':{
                     'n_estimators': [8, 16, 32, 64, 128, 256],
                     'learning_rate': [0.001, 0.01, 0.1, 0.5, 1],
-                    'algorithm': ['SAMME.R']
+                    'algorithm': ['SAMME']
                 },
                 'GradientBoostingClassifier':{
                     'loss': ['log_loss', 'exponential'],
