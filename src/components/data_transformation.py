@@ -9,9 +9,9 @@ from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from src.logger import logging
 from src.exception import CustomException
+from src.utils import save_obj
 
 @dataclasses
-
 class DataTransformationConfig:
     preprocessor_obj_path=os.path.join('artifacts',"preprocessor.pkl")
     
