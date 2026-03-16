@@ -35,3 +35,7 @@ Technologies Used
 .Matplotlib / Seaborn (optional)
 .Scikit-learn
 .Jupyter Notebook / Python Script
+
+
+
+runngin process (open your terminal and run)= python app.py
