@@ -1,6 +1,6 @@
 import sys
 import os
-from dataclasses import dataclasses
+from dataclasses import dataclass
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
@@ -11,7 +11,7 @@ from src.logger import logging
 from src.exception import CustomException
 from src.utils import save_obj
 
-@dataclasses
+@dataclass
 class DataTransformationConfig:
     preprocessor_obj_path=os.path.join('artifacts',"preprocessor.pkl")
     
@@ -28,8 +28,8 @@ class DataTransformation:
                          'Insulin',
                          'BMI',
                          'DiabetesPedigreeFunction',
-                         'Age',
-                         'Outcome']
+                         'Age'
+                        ]
             
             num_pipeline=Pipeline(
                 steps=[
@@ -72,15 +72,15 @@ class DataTransformation:
             input_feature_train_arr=preprocessor_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr=preprocessor_obj.transform(input_feature_test_df)
             
-            train_arr=np.c_(input_feature_train_arr,np.array(traget_feature_train_df))
-            test_arr=np.c_(input_feature_test_arr,np.array(target_feature_test_df))
+            train_arr=np.c_[input_feature_train_arr,np.array(traget_feature_train_df)]
+            test_arr=np.c_[input_feature_test_arr,np.array(target_feature_test_df)]
             
             logging.info("Saving all array")
             
             
             save_obj(
                 file_path=self.data_transformation_config.preprocessor_obj_path,
-                onj=preprocessor_obj
+                obj=preprocessor_obj
             )
             
             return(

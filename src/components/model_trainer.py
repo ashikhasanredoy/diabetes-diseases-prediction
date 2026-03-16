@@ -27,10 +27,10 @@ class ModelTraining:
             logging.info("Spliting the train and test input")
             
             X_train,y_train,X_test,y_test=(
-                train_arr[:,:-1],
-                train_arr[:,-1],
-                test_arr[:,:-1],
-                test_arr[:,-1]
+                train_arr[:, :-1],
+                train_arr[:, -1],
+                test_arr[:, :-1],
+                test_arr[:, -1]
             )
             
             models={
@@ -61,8 +61,7 @@ class ModelTraining:
                 },
                 'AdaBoostClassifier':{
                     'n_estimators': [8, 16, 32, 64, 128, 256],
-                    'learning_rate': [0.001, 0.01, 0.1, 0.5, 1],
-                    'algorithm': ['SAMME']
+                    'learning_rate': [0.001, 0.01, 0.1, 0.5, 1]   
                 },
                 'GradientBoostingClassifier':{
                     'loss': ['log_loss', 'exponential'],
@@ -122,3 +121,17 @@ class ModelTraining:
             return score
         except Exception as e:
             raise CustomException(e,sys)     
+
+if __name__=="__main__":
+    from src.components.data_ingestion import DataIngestion
+    from src.components.data_transformation import DataTransformation
+
+    ingestion = DataIngestion()
+    train_path, test_path = ingestion.initiate_data_ingestion()
+
+    transformation = DataTransformation()
+    train_arr, test_arr, _ = transformation.data_tranfromation(train_path, test_path)
+
+    trainer = ModelTraining()
+    score = trainer.initiate_model_trained(train_arr, test_arr)
+    print(f"✅ Best model accuracy: {score}")

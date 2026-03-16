@@ -1,0 +1,8 @@
+[2026-03-16 14:06:33,227] 22 root - INFO - Enter the data ingestion method
+[2026-03-16 14:06:33,229] 25 root - INFO - Read the dataset using pandas
+[2026-03-16 14:06:33,233] 30 root - INFO - Doing the train test split
+[2026-03-16 14:06:33,242] 60 root - INFO - reading the train and test data
+[2026-03-16 14:06:33,242] 42 root - INFO - all numeric columns['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
+[2026-03-16 14:06:33,243] 70 root - INFO - Applying preproceesor on the data set
+[2026-03-16 14:06:33,251] 78 root - INFO - Saving all array
+[2026-03-16 14:06:33,252] 27 root - INFO - Spliting the train and test input

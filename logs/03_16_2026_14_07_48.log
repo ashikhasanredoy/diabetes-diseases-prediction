@@ -1,0 +1,9 @@
+[2026-03-16 14:07:48,407] 22 root - INFO - Enter the data ingestion method
+[2026-03-16 14:07:48,409] 25 root - INFO - Read the dataset using pandas
+[2026-03-16 14:07:48,413] 30 root - INFO - Doing the train test split
+[2026-03-16 14:07:48,421] 60 root - INFO - reading the train and test data
+[2026-03-16 14:07:48,421] 42 root - INFO - all numeric columns['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
+[2026-03-16 14:07:48,422] 70 root - INFO - Applying preproceesor on the data set
+[2026-03-16 14:07:48,430] 78 root - INFO - Saving all array
+[2026-03-16 14:07:48,431] 27 root - INFO - Spliting the train and test input
+[2026-03-16 14:08:23,570] 112 root - INFO - Best model found: AdaBoostClassifier with accuracy score: 0.7575757575757576
