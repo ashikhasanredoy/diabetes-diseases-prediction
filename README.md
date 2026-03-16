@@ -10,7 +10,7 @@ This project uses the Pima Indians Diabetes Dataset to train a classification mo
 
 Dataset Description:
 
-The dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. It contains diagnostic measurements from 768 female patients of Pima Indian heritage, all aged 21 or older.
+The dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. It contains diagnostic measurements from 768 patients of Pima Indian heritage, all aged 21 or older.
 FeatureDescriptionPregnanciesNumber of times pregnantGlucosePlasma glucose concentration (2-hour oral glucose tolerance test)BloodPressureDiastolic blood pressure (mm Hg)SkinThicknessTriceps skin fold thickness (mm)Insulin2-Hour serum insulin (mu U/ml)BMIBody Mass Index (weight in kg / height in m²)DiabetesPedigreeFunctionDiabetes pedigree function (genetic risk score)AgeAge of the patient (years)OutcomeTarget variable — 1 = Diabetic, 0 = Not Diabetic
 
 
