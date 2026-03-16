@@ -37,5 +37,5 @@ Technologies Used
 .Jupyter Notebook / Python Script
 
 
-
-runngin process (open your terminal and run)= python app.py
+pip install -r requirements.txt
+runnging process (open your terminal and run)= python app.py
